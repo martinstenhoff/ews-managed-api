@@ -40,8 +40,8 @@ namespace Microsoft.Exchange.WebServices.Data
         /// </summary>
         private static XmlReaderSettings defaultSettings = new XmlReaderSettings()
         {
-            ProhibitDtd = true,
-            XmlResolver = null
+            XmlResolver = null,
+            DtdProcessing = DtdProcessing.Prohibit
         };
         #endregion
 
@@ -85,7 +85,7 @@ namespace Microsoft.Exchange.WebServices.Data
             // we need to check to see if the reader is configured properly
             if (reader.Settings != null)
             {
-                if (reader.Settings.ProhibitDtd != true)
+                if (reader.Settings.DtdProcessing != DtdProcessing.Prohibit)
                 {
                     throw new XmlDtdException();
                 }

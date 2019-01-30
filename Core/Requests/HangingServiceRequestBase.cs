@@ -242,12 +242,14 @@ namespace Microsoft.Exchange.WebServices.Data
                     this.Disconnect(HangingRequestDisconnectReason.Exception, ex);
                     return;
                 }
+#if NETFULL
                 catch (HttpException ex)
                 {
                     // Stream is closed, so disconnect.
                     this.Disconnect(HangingRequestDisconnectReason.Exception, ex);
                     return;
                 }
+#endif
                 catch (WebException ex)
                 {
                     // Stream is closed, so disconnect.

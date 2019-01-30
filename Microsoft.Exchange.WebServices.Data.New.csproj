@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <!-- when RootNamespace != the csproj file name -->
+    <RootNamespace>Microsoft.Exchange.WebServices.Data</RootNamespace>
+    <!-- when AssemblyName != the csproj file name -->
+    <AssemblyName>Microsoft.Exchange.WebServices</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DefineConstants>$(DefineConstants);NET45;NETFULL</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>obj\Debug\net45\Microsoft.Exchange.WebServices.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="cd &quot;$(SolutionDir)obj&quot;&#xD;&#xA;del *.json /q" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="cd &quot;$(SolutionDir)obj&quot;&#xD;&#xA;del *.json /q" />
+  </Target>
+</Project>

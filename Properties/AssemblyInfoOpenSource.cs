@@ -26,6 +26,8 @@
 using System.Reflection;
 
 // Assembly information
+
+#if NET35
 [assembly: AssemblyTitle("Microsoft Exchange Managed API")]
 [assembly: AssemblyDescription("Microsoft Exchange Web Services (EWS Managed API")]
 [assembly: AssemblyCompany("Microsoft Corporation")]
@@ -37,3 +39,4 @@ using System.Reflection;
 // will be built from there.
 [assembly: AssemblyVersion("2.2.1")]
 [assembly: AssemblyFileVersion("2.2.1.0")]
+#endif

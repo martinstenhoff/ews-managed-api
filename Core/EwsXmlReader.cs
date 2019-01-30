@@ -70,10 +70,11 @@ namespace Microsoft.Exchange.WebServices.Data
             XmlReaderSettings settings = new XmlReaderSettings()
             {
                 ConformanceLevel = ConformanceLevel.Auto,
-                ProhibitDtd = true,
+
                 IgnoreComments = true,
                 IgnoreProcessingInstructions = true,
                 IgnoreWhitespace = true,
+                DtdProcessing = DtdProcessing.Prohibit,
                 XmlResolver = null
             };
 
@@ -83,7 +84,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return XmlReader.Create(xmlTextReader, settings);
         }
 
-        #endregion
+#endregion
 
         /// <summary>
         /// Formats the name of the element.

@@ -40,12 +40,12 @@ namespace Microsoft.Exchange.WebServices.Data
         /// </summary>
         private XmlReaderSettings settings = new XmlReaderSettings()
         {
-            ProhibitDtd = true,
-            XmlResolver = null
+            XmlResolver = null,
+            DtdProcessing = DtdProcessing.Prohibit
         };
-        #endregion
+#endregion
 
-        #region Constructors
+#region Constructors
         /// <summary>
         /// Initializes a new instance of the SafeXmlDocument class.
         /// </summary>
@@ -72,9 +72,9 @@ namespace Microsoft.Exchange.WebServices.Data
             : base(nt)
         {
         }
-        #endregion
+#endregion
 
-        #region Methods
+#region Methods
         /// <summary>
         /// Loads the XML document from the specified stream.
         /// </summary>
@@ -120,7 +120,7 @@ namespace Microsoft.Exchange.WebServices.Data
             // we need to check to see if the reader is configured properly
             if (reader.Settings != null)
             {
-                if (reader.Settings.ProhibitDtd != true)
+                if (reader.Settings.DtdProcessing != DtdProcessing.Prohibit)
                 {
                     throw new XmlDtdException();
                 }
@@ -150,6 +150,6 @@ namespace Microsoft.Exchange.WebServices.Data
                 base.Load(reader);
             }
         }
-        #endregion
+#endregion
     }
 }
