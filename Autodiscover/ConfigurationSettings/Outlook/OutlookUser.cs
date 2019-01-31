@@ -56,14 +56,11 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
                 return results;
             });
 
-        #region Private fields
-        private string displayName;
+                private string displayName;
         private string legacyDN;
         private string deploymentId;
         private string autodiscoverAMTPAddress;
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Initializes a new instance of the <see cref="OutlookUser"/> class.
         /// </summary>
         internal OutlookUser()

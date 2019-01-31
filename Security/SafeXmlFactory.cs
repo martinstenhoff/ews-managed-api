@@ -34,8 +34,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal class SafeXmlFactory
     {
-        #region Members
-        /// <summary>
+                /// <summary>
         /// Safe xml reader settings.
         /// </summary>
         private static XmlReaderSettings defaultSettings = new XmlReaderSettings()
@@ -43,10 +42,7 @@ namespace Microsoft.Exchange.WebServices.Data
             DtdProcessing = DtdProcessing.Prohibit,
             XmlResolver = null
         };
-        #endregion
-
-        #region XmlTextReader
-        /// <summary>
+                        /// <summary>
         /// Initializes a new instance of the XmlTextReader class with the specified stream.
         /// </summary>
         /// <param name="stream">The stream containing the XML data to read.</param>
@@ -214,10 +210,7 @@ namespace Microsoft.Exchange.WebServices.Data
             xtr.XmlResolver = null;
             return xtr;
         }
-        #endregion
-
-        #region XPathDocument
-        /// <summary>
+                        /// <summary>
         /// Initializes a new instance of the XPathDocument class from the XML data in the specified Stream object.
         /// </summary>
         /// <param name="stream">The Stream object that contains the XML data.</param>
@@ -308,6 +301,5 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return new XPathDocument(reader, space);
         }
-        #endregion
-    }
+            }
 }

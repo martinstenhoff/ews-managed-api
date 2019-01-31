@@ -173,8 +173,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 MessageDisposition.SendAndSaveCopy);
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or sets a value indicating whether read receipts will be requested from recipients of this response.
         /// </summary>
@@ -193,6 +192,5 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.PropertyBag[EmailMessageSchema.IsDeliveryReceiptRequested] = value; }
         }
 
-        #endregion
-    }
+            }
 }

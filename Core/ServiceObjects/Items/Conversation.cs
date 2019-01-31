@@ -72,8 +72,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return ConversationSchema.Id;
         }
 
-        #region Not Supported Methods or properties
-
+        
         /// <summary>
         /// This method is not supported in this object.
         /// Loads the specified set of properties on the object.
@@ -138,10 +137,7 @@ namespace Microsoft.Exchange.WebServices.Data
             throw new NotSupportedException();
         }
 
-        #endregion
-
-        #region Conversation Action Methods
-        /// <summary>
+                        /// <summary>
         /// Sets up a conversation so that any item received within that conversation is always categorized.
         /// Calling this method results in a call to EWS.
         /// </summary>
@@ -445,10 +441,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 contextFolderId,
                 flag)[0].ThrowIfNecessary();
         }
-        #endregion
-
-        #region Properties
-        /// <summary>
+                        /// <summary>
         /// Gets the Id of this Conversation.
         /// </summary>
         public ConversationId Id
@@ -860,6 +853,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return (bool)this.PropertyBag[ConversationSchema.GlobalHasIrm]; }
         }
 
-        #endregion
-    }
+            }
 }

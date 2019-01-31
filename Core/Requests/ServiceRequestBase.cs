@@ -38,8 +38,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal abstract class ServiceRequestBase
     {
-        #region Private Constants
-        /// <summary>
+                /// <summary>
         /// The two contants below are used to set the AnchorMailbox and ExplicitLogonUser values
         /// in the request header.
         /// </summary>
@@ -56,9 +55,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private const string XMLSchemaInstanceNamespace = "http://www.w3.org/2001/XMLSchema-instance";
         private const string ClientStatisticsRequestHeader = "X-ClientStatistics";
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Gets or sets the anchor mailbox associated with the request
         /// </summary>
         /// <remarks>
@@ -122,8 +119,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region Methods for subclasses to override
-
+        
         /// <summary>
         /// Gets the name of the XML element.
         /// </summary>
@@ -179,9 +175,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return false; }
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Validate request.
         /// </summary>
         internal virtual void Validate()
@@ -267,8 +261,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region HttpWebRequest-based implementation
-
+        
         /// <summary>
         /// Writes XML.
         /// </summary>
@@ -931,6 +924,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

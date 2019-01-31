@@ -205,8 +205,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or sets the string parser.
         /// </summary>
@@ -251,6 +250,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return defaultValueMap.Member[this.Type]; }
         }
 
-        #endregion
-    }
+            }
 }

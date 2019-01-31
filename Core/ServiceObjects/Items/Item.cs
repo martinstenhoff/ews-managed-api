@@ -551,8 +551,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return base.GetIsTimeZoneHeaderRequired(isUpdateOperation);
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets a value indicating whether the item is an attachment.
         /// </summary>
@@ -1069,6 +1068,5 @@ namespace Microsoft.Exchange.WebServices.Data
             this.PropertyBag[ItemSchema.Subject] = subject;
         }
 
-        #endregion
-    }
+            }
 }

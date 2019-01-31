@@ -38,8 +38,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private const string ItemXmlElementName = "Base64Binary";
         private List<byte[]> content = new List<byte[]>();
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the content of the arrray of byte arrays
         /// </summary>
@@ -48,9 +47,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.content.ToArray(); }
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Tries to read element from XML.
         /// </summary>
         /// <param name="reader">The reader.</param>

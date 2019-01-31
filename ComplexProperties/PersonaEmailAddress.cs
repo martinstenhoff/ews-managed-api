@@ -232,8 +232,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region ISearchStringProvider methods
-        /// <summary>
+                /// <summary>
         /// Get a string representation for using this instance in a search filter.
         /// </summary>
         /// <returns>String representation of instance.</returns>
@@ -241,10 +240,7 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             return this.Address;
         }
-        #endregion
-
-        #region Object method overrides
-        /// <summary>
+                        /// <summary>
         /// Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
         /// </summary>
         /// <returns>
@@ -277,6 +273,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 return addressPart;
             }
         }
-        #endregion
-    }
+            }
 }

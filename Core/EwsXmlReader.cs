@@ -38,15 +38,11 @@ namespace Microsoft.Exchange.WebServices.Data
     {
         private const int ReadWriteBufferSize = 4096;
 
-        #region Private members
-
+        
         private XmlNodeType prevNodeType = XmlNodeType.None;
         private XmlReader xmlReader;
 
-        #endregion
-
-        #region Constructor
-
+                
         /// <summary>
         /// Initializes a new instance of the <see cref="EwsXmlReader"/> class.
         /// </summary>
@@ -83,8 +79,6 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return XmlReader.Create(xmlTextReader, settings);
         }
-
-#endregion
 
         /// <summary>
         /// Formats the name of the element.

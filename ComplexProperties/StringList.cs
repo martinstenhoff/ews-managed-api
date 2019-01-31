@@ -229,8 +229,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region IEnumerable<string> Members
-
+        
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -240,10 +239,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.items.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -253,9 +249,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.items.GetEnumerator();
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
         /// </summary>
         /// <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>

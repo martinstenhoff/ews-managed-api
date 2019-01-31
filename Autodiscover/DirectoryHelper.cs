@@ -38,8 +38,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
     /// </summary>
     internal class DirectoryHelper
     {
-        #region Static members
-
+        
         /// <summary>
         /// Maximum number of SCP hops in an SCP host lookup call.
         /// </summary>
@@ -60,15 +59,10 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         /// </summary>
         private const string ScpFilterString = "(&(objectClass=serviceConnectionPoint)(|(keywords=" + ScpPtrGuidString + ")(keywords=" + ScpUrlGuidString + ")))";
 
-        #endregion
-
-        #region Private members
-
+                
         private ExchangeServiceBase service;
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Gets the SCP URL list for domain.
         /// </summary>
         /// <param name="domainName">Name of the domain.</param>
@@ -383,8 +377,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             this.Service.TraceMessage(TraceFlags.AutodiscoverConfiguration, message);
         }
 
-        #region Constructors
-
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="DirectoryHelper"/> class.
         /// </summary>
@@ -393,15 +386,11 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         {
             this.service = service;
         }
-        #endregion
-
-        #region Properties
-
+                
         internal ExchangeServiceBase Service
         {
             get { return this.service; }
         }
 
-        #endregion
-    }
+            }
 }

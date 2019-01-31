@@ -191,8 +191,7 @@ namespace Microsoft.Exchange.WebServices.Data
             responseMessage.SendAndSaveCopy();
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the conversation index of the post item.
         /// </summary>
@@ -261,6 +260,5 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.PropertyBag[EmailMessageSchema.Sender] = value; }
         }
 
-        #endregion
-    }
+            }
 }

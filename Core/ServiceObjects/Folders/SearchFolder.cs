@@ -140,8 +140,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return ExchangeVersion.Exchange2007_SP1;
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the search parameters associated with the search folder.
         /// </summary>
@@ -150,6 +149,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return (SearchFolderParameters)this.PropertyBag[SearchFolderSchema.SearchParameters]; }
         }
 
-        #endregion
-    }
+            }
 }

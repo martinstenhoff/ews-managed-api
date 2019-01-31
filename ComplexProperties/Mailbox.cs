@@ -30,8 +30,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public class Mailbox : ComplexProperty, ISearchStringProvider
     {
-        #region Constructors
-
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="Mailbox"/> class.
         /// </summary>
@@ -61,10 +60,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.RoutingType = routingType;
         }
 
-        #endregion
-
-        #region Public Properties
-
+                
         /// <summary>
         /// True if this instance is valid, false otherthise.
         /// </summary>
@@ -90,10 +86,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get; set;
         }
 
-        #endregion
-
-        #region Operator overloads
-        
+                        
         /// <summary>
         /// Defines an implicit conversion between a string representing an SMTP address and Mailbox.
         /// </summary>
@@ -104,10 +97,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return new Mailbox(smtpAddress);
         }
 
-        #endregion
-
-        #region Xml Methods
-
+                
         /// <summary>
         /// Tries to read element from XML.
         /// </summary>
@@ -138,10 +128,7 @@ namespace Microsoft.Exchange.WebServices.Data
             writer.WriteElementValue(XmlNamespace.Types, XmlElementNames.RoutingType, this.RoutingType);
         }
 
-        #endregion
-
-        #region ISearchStringProvider methods
-
+                
         /// <summary>
         /// Get a string representation for using this instance in a search filter.
         /// </summary>
@@ -151,9 +138,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.Address;
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Validates this instance.
         /// </summary>
         internal override void InternalValidate()
@@ -164,8 +149,7 @@ namespace Microsoft.Exchange.WebServices.Data
             EwsUtilities.ValidateNonBlankStringParamAllowNull(this.RoutingType, "routingType");
         }
 
-        #region Object method overrides
-        /// <summary>
+                /// <summary>
         /// Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
         /// </summary>
         /// <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
@@ -246,6 +230,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 return this.Address;
             }
         }
-        #endregion
-    }
+            }
 }

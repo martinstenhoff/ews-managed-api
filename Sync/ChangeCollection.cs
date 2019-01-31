@@ -105,8 +105,7 @@ namespace Microsoft.Exchange.WebServices.Data
             internal set { this.moreChangesAvailable = value; }
         }
 
-        #region IEnumerable<TChange> Members
-
+        
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -116,10 +115,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.changes.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -129,6 +125,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.changes.GetEnumerator();
         }
 
-        #endregion
-    }
+            }
 }

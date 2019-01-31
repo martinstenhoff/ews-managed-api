@@ -34,8 +34,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal class SafeXmlSchema : XmlSchema
     {
-        #region Members
-        /// <summary>
+                /// <summary>
         /// Safe xml reader settings.
         /// </summary>
         private static XmlReaderSettings defaultSettings = new XmlReaderSettings()
@@ -43,10 +42,7 @@ namespace Microsoft.Exchange.WebServices.Data
             XmlResolver = null,
             DtdProcessing = DtdProcessing.Prohibit
         };
-        #endregion
-
-        #region Methods
-        /// <summary>
+                        /// <summary>
         /// Reads an XML Schema from the supplied stream.
         /// </summary>
         /// <param name="stream">The supplied data stream.</param>
@@ -93,6 +89,5 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return XmlSchema.Read(reader, validationEventHandler);
         }
-        #endregion
-    }
+            }
 }

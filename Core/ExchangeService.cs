@@ -44,14 +44,10 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public sealed class ExchangeService : ExchangeServiceBase
     {
-        #region Constants
-
+        
         private const string TargetServerVersionHeaderName = "X-EWS-TargetVersion";
 
-        #endregion
-
-        #region Fields
-
+                
         private Uri url;
         private CultureInfo preferredCulture;
         private DateTimePrecision dateTimePrecision = DateTimePrecision.Default;
@@ -64,10 +60,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private bool traceEnablePrettyPrinting = true;
         private string targetServerVersion = null;
 
-        #endregion
-
-        #region Response object operations
-
+                
         /// <summary>
         /// Create response object.
         /// </summary>
@@ -91,10 +84,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return responses[0].Items;
         }
 
-        #endregion
-
-        #region Folder operations
-
+                
         /// <summary>
         /// Creates a folder. Calling this method results in a call to EWS.
         /// </summary>
@@ -451,10 +441,7 @@ namespace Microsoft.Exchange.WebServices.Data
             request.Execute();
         }
 
-        #endregion
-
-        #region Item operations
-
+                
         /// <summary>
         /// Creates multiple items in a single EWS call. Supported item classes are EmailMessage, Appointment, Contact, PostItem, Task and Item.
         /// CreateItems does not support items that have unsaved attachments.
@@ -1554,10 +1541,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request.Execute();
         }
 
-        #endregion
-
-        #region People operations
-
+                
         /// <summary>
         /// This method is for search scenarios. Retrieves a set of personas satisfying the specified search conditions.
         /// </summary>
@@ -1806,10 +1790,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request.EndExecute(asyncResult).Results;
         }
 
-        #endregion
-
-        #region PeopleInsights operations
-
+                
         /// <summary>
         /// This method is for retreiving people insight for given email addresses
         /// </summary>
@@ -1823,9 +1804,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request.Execute().People;
         }
 
-        #endregion
-        #region Attachment operations
-
+                
         /// <summary>
         /// Gets an attachment.
         /// </summary>
@@ -1947,10 +1926,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request.Execute();
         }
 
-        #endregion
-
-        #region AD related operations
-
+                
         /// <summary>
         /// Finds contacts in the user's Contacts folder and the Global Address List (in that order) that have names
         /// that match the one passed as a parameter. Calling this method results in a call to EWS.
@@ -2142,10 +2118,7 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return request.Execute().PasswordExpirationDate;
         }
-        #endregion
-
-        #region Notification operations
-
+                
         /// <summary>
         /// Subscribes to pull notifications. Calling this method results in a call to EWS.
         /// </summary>
@@ -2953,10 +2926,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request;
         }
 
-        #endregion
-
-        #region Synchronization operations
-
+                
         /// <summary>
         /// Synchronizes the items of a specific folder. Calling this method results in a call to EWS.
         /// </summary>
@@ -3246,10 +3216,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request;
         }
 
-        #endregion
-
-        #region Availability operations
-
+                
         /// <summary>
         /// Gets Out of Office (OOF) settings for a specific user. Calling this method results in a call to EWS.
         /// </summary>
@@ -3365,10 +3332,7 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return request.Execute().Rooms;
         }
-        #endregion
-
-        #region Conversation
-        /// <summary>
+                        /// <summary>
         /// Retrieves a collection of all Conversations in the specified Folder.
         /// </summary>
         /// <param name="view">The view controlling the number of conversations returned.</param>
@@ -4150,10 +4114,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 ServiceErrorHandling.ReturnErrors);
         }
 
-        #endregion
-
-        #region Id conversion operations
-
+                
         /// <summary>
         /// Converts multiple Ids from one format to another in a single call to EWS.
         /// </summary>
@@ -4210,10 +4171,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return responses[0].ConvertedId;
         }
 
-        #endregion
-
-        #region Delegate management operations
-
+                
         /// <summary>
         /// Adds delegates to a specific mailbox. Calling this method results in a call to EWS.
         /// </summary>
@@ -4377,10 +4335,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return delegateInformation;
         }
 
-        #endregion
-
-        #region UserConfiguration operations
-
+                
         /// <summary>
         /// Creates a UserConfiguration.
         /// </summary>
@@ -4473,10 +4428,7 @@ namespace Microsoft.Exchange.WebServices.Data
             request.Execute();
         }
 
-        #endregion
-
-        #region InboxRule operations
-        /// <summary>
+                        /// <summary>
         /// Retrieves inbox rules of the authenticated user.
         /// </summary>
         /// <returns>A RuleCollection object containing the authenticated user's inbox rules.</returns>
@@ -4534,10 +4486,7 @@ namespace Microsoft.Exchange.WebServices.Data
             request.MailboxSmtpAddress = mailboxSmtpAddress;
             request.Execute();
         }
-        #endregion
-
-        #region eDiscovery/Compliance operations
-
+                
         /// <summary>
         /// Get dicovery search configuration
         /// </summary>
@@ -4944,10 +4893,7 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return request;
         }
-        #endregion
-
-        #region MRM operations
-
+                
         /// <summary>
         /// Get user retention policy tags.
         /// </summary>
@@ -4959,10 +4905,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request.Execute();
         }
 
-        #endregion
-
-        #region Autodiscover
-
+                
         /// <summary>
         /// Default implementation of AutodiscoverRedirectionUrlValidationCallback.
         /// Always returns true indicating that the URL can be used.
@@ -5126,10 +5069,7 @@ namespace Microsoft.Exchange.WebServices.Data
             throw new AutodiscoverLocalException(Strings.AutodiscoverDidNotReturnEwsUrl);
         }
 
-        #endregion
-
-        #region ClientAccessTokens
-
+                
         /// <summary>
         /// GetClientAccessToken
         /// </summary>
@@ -5160,10 +5100,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return request.Execute();
         }
 
-        #endregion
-
-        #region Client Extensibility
-
+                
         /// <summary>
         /// Get the app manifests.
         /// </summary>
@@ -5381,10 +5318,7 @@ namespace Microsoft.Exchange.WebServices.Data
             request.Execute();
         }
 
-        #endregion
-
-        #region Groups
-        /// <summary>
+                        /// <summary>
         /// Gets the list of unified groups associated with the user
         /// </summary>
         /// <param name="requestedUnifiedGroupsSets">The Requested Unified Groups Sets</param>
@@ -5468,10 +5402,7 @@ namespace Microsoft.Exchange.WebServices.Data
             request.Execute();
         }
 
-        #endregion
-
-        #region Diagnostic Method -- Only used by test
-
+                
         /// <summary>
         /// Executes the diagnostic method.
         /// </summary>
@@ -5486,10 +5417,7 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return request.Execute()[0].ReturnValue;
         }
-        #endregion
-
-        #region Validation
-
+                
         /// <summary>
         /// Validates this instance.
         /// </summary>
@@ -5598,10 +5526,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return true;
         }
 
-        #endregion
-
-        #region Constructors
-
+                
         /// <summary>
         /// Initializes a new instance of the <see cref="ExchangeService"/> class, targeting
         /// the latest supported version of EWS and scoped to the system's current time zone.
@@ -5683,10 +5608,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.TargetServerVersion = targetServerVersion;
         }
 
-        #endregion
-
-        #region Utilities
-        /// <summary>
+                        /// <summary>
         /// Creates an HttpWebRequest instance and initializes it with the appropriate parameters,
         /// based on the configuration of this service object.
         /// </summary>
@@ -5738,10 +5660,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 TraceFlags.EwsResponse);
         }
 
-        #endregion
-
-        #region Properties
-
+                
         /// <summary>
         /// Gets or sets the URL of the Exchange Web Services. 
         /// </summary>
@@ -5884,6 +5803,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

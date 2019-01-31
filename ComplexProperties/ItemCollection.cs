@@ -111,8 +111,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region IEnumerable<TItem> Members
-
+        
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -122,10 +121,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.items.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -135,6 +131,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.items.GetEnumerator();
         }
 
-        #endregion
-    }
+            }
 }

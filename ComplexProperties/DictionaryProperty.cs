@@ -293,8 +293,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.Entries.ContainsKey(key);
         }
 
-        #region ICustomXmlUpdateSerializer Members
-
+        
         /// <summary>
         /// Writes updates to XML.
         /// </summary>
@@ -366,6 +365,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return false;
         }
 
-        #endregion
-    }
+            }
 }

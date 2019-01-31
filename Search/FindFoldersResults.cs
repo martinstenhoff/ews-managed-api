@@ -83,8 +83,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.folders; }
         }
 
-        #region IEnumerable<Folder> Members
-
+        
         /// <summary>
         /// Returns an enumerator that iterates through the collection.
         /// </summary>
@@ -96,10 +95,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.folders.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Returns an enumerator that iterates through a collection.
         /// </summary>
@@ -111,6 +107,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.folders.GetEnumerator();
         }
 
-        #endregion
-    }
+            }
 }

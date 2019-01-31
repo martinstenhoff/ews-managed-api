@@ -443,8 +443,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region IDisposable Members
-
+        
         /// <summary>
         /// Finalizes an instance of the StreamingSubscriptionConnection class.
         /// </summary>
@@ -500,6 +499,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

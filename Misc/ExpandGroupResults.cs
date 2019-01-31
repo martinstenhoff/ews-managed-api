@@ -84,8 +84,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.members; }
         }
 
-        #region IEnumerable<EmailAddress> Members
-
+        
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -95,10 +94,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.members.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -108,9 +104,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.members.GetEnumerator();
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Loads from XML.
         /// </summary>
         /// <param name="reader">The reader.</param>

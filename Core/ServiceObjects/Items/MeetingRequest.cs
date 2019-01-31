@@ -192,8 +192,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the type of this meeting request.
         /// </summary>
@@ -530,6 +529,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return (string)this.PropertyBag[AppointmentSchema.NetShowUrl]; }
         }
 
-        #endregion
-    }
+            }
 }

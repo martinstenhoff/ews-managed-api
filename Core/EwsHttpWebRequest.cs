@@ -50,8 +50,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.request = (HttpWebRequest)WebRequest.Create(uri);
         }
 
-        #region IEwsHttpWebRequest Members
-
+        
         /// <summary>
         /// Aborts this instance.
         /// </summary>
@@ -293,6 +292,5 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.request.ConnectionGroupName = value; }
         }
 
-        #endregion
-    }
+            }
 }

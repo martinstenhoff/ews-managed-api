@@ -107,8 +107,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.responseType; }
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or sets the body of the response.
         /// </summary>
@@ -160,6 +159,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return (MessageBody)this.PropertyBag[ResponseObjectSchema.BodyPrefix]; }
             set { this.PropertyBag[ResponseObjectSchema.BodyPrefix] = value; }
         }
-        #endregion
-    }
+            }
 }

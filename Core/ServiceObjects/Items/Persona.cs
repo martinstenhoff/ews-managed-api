@@ -131,8 +131,7 @@ namespace Microsoft.Exchange.WebServices.Data
             base.Validate();
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the persona id
         /// </summary>
@@ -377,6 +376,5 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.PropertyBag[PersonaSchema.ThirdPartyPhotoUrls] = value; }
         }
 
-        #endregion
-    }
+            }
 }

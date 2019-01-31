@@ -34,8 +34,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal class SafeXmlDocument : XmlDocument
     {
-        #region Members
-        /// <summary>
+                /// <summary>
         /// Xml settings object.
         /// </summary>
         private XmlReaderSettings settings = new XmlReaderSettings()
@@ -43,9 +42,6 @@ namespace Microsoft.Exchange.WebServices.Data
             XmlResolver = null,
             DtdProcessing = DtdProcessing.Prohibit
         };
-#endregion
-
-#region Constructors
         /// <summary>
         /// Initializes a new instance of the SafeXmlDocument class.
         /// </summary>
@@ -72,9 +68,6 @@ namespace Microsoft.Exchange.WebServices.Data
             : base(nt)
         {
         }
-#endregion
-
-#region Methods
         /// <summary>
         /// Loads the XML document from the specified stream.
         /// </summary>
@@ -150,6 +143,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 base.Load(reader);
             }
         }
-#endregion
     }
 }

@@ -135,8 +135,7 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.aggregateType = value; }
         }
 
-        #region ISelfValidate Members
-
+        
         /// <summary>
         /// Implements ISelfValidate.Validate. Validates this grouping.
         /// </summary>
@@ -145,6 +144,5 @@ namespace Microsoft.Exchange.WebServices.Data
             this.InternalValidate();
         }
 
-        #endregion
-    }
+            }
 }

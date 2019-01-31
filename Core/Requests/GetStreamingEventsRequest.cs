@@ -124,8 +124,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return response;
         }
 
-        #region Test hooks
-        /// <summary>
+                /// <summary>
         /// Allow test code to change heartbeat value
         /// </summary>
         internal static int HeartbeatFrequency
@@ -135,6 +134,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 heartbeatFrequency = value;
             }
         }
-        #endregion
-    }
+            }
 }

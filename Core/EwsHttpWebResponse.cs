@@ -48,8 +48,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.response = response;
         }
 
-        #region IEwsHttpWebResponse Members
-
+        
         /// <summary>
         /// Closes the response stream.
         /// </summary>
@@ -132,10 +131,7 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             get { return this.response.ProtocolVersion; }
         }
-        #endregion
-
-        #region IDisposable Members
-
+                
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
@@ -144,6 +140,5 @@ namespace Microsoft.Exchange.WebServices.Data
             this.response.Close();
         }
 
-        #endregion
-    }
+            }
 }

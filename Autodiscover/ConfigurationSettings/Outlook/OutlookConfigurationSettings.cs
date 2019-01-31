@@ -35,8 +35,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
     /// </summary>
     internal sealed class OutlookConfigurationSettings : ConfigurationSettingsBase
     {
-        #region Static fields
-        /// <summary>
+                /// <summary>
         /// All user settings that are available from the Outlook provider.
         /// </summary>
         private static LazyMember<List<UserSettingName>> allOutlookProviderSettings = new LazyMember<List<UserSettingName>>(
@@ -48,14 +47,9 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
                 results.Add(UserSettingName.AlternateMailboxes);
                 return results;
             });
-        #endregion
-
-        #region Private fields
-        private OutlookUser user;
+                        private OutlookUser user;
         private OutlookAccount account;
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Initializes a new instance of the <see cref="OutlookConfigurationSettings"/> class.
         /// </summary>
         public OutlookConfigurationSettings()

@@ -100,8 +100,7 @@ namespace Microsoft.Exchange.WebServices.Data
             // nothing to do.
         }
 
-        #region ISelfValidate Members
-
+        
         /// <summary>
         /// Validates this instance.
         /// </summary>
@@ -110,6 +109,5 @@ namespace Microsoft.Exchange.WebServices.Data
             this.InternalValidate();
         }
 
-        #endregion
-    }
+            }
 }

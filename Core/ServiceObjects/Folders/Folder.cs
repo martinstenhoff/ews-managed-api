@@ -552,8 +552,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.ExtendedProperties;
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the Id of the folder.
         /// </summary>
@@ -692,6 +691,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

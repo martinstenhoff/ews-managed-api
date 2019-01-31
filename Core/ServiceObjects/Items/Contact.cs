@@ -217,8 +217,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or set the name under which this contact is filed as. FileAs can be manually set or
         /// can be automatically calculated based on the value of the FileAsMapping property.
@@ -593,6 +592,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return (EmailAddressCollection)this.PropertyBag[ContactSchema.DirectReports]; }
         }
 
-        #endregion
-    }
+            }
 }

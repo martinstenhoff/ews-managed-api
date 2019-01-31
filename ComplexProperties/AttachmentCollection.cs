@@ -39,17 +39,13 @@ namespace Microsoft.Exchange.WebServices.Data
     [EditorBrowsable(EditorBrowsableState.Never)]
     public sealed class AttachmentCollection : ComplexPropertyCollection<Attachment>, IOwnedProperty
     {
-        #region Fields
-
+        
         /// <summary>
         /// The item owner that owns this attachment collection
         /// </summary>
         private Item owner;
 
-        #endregion
-
-        #region Constructors
-
+                
         /// <summary>
         /// Initializes a new instance of AttachmentCollection.
         /// </summary>
@@ -58,12 +54,8 @@ namespace Microsoft.Exchange.WebServices.Data
         {
         }
 
-        #endregion
-
-        #region Properties
-
-        #region IOwnedProperty Members
-
+                
+        
         /// <summary>
         /// The owner of this attachment collection.
         /// </summary>
@@ -87,12 +79,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-
-        #endregion
-
-        #region Methods
-
+                        
         /// <summary>
         /// Adds a file attachment to the collection.
         /// </summary>
@@ -480,6 +467,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 throw new CreateAttachmentException(responses, Strings.AttachmentCreationFailed);
             }
         }
-        #endregion
-    }
+            }
 }

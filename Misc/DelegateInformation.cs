@@ -33,15 +33,11 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public sealed class DelegateInformation
     {
-        #region Private members
-
+        
         private Collection<DelegateUserResponse> delegateUserResponses;
         private MeetingRequestsDeliveryScope meetingReqestsDeliveryScope;
 
-        #endregion
-
-        #region Constructor
-
+                
         /// <summary>
         /// Initializes a DelegateInformation object
         /// </summary>
@@ -53,10 +49,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.meetingReqestsDeliveryScope = meetingReqestsDeliveryScope;
         }
 
-        #endregion
-
-        #region Public Properties
-
+                
         /// <summary>
         /// Gets a list of responses for each of the delegate users concerned by the operation.
         /// </summary>
@@ -73,6 +66,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.meetingReqestsDeliveryScope; }
         }
 
-        #endregion
-    }
+            }
 }

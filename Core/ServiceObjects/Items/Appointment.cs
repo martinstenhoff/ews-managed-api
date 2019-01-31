@@ -572,8 +572,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return SendInvitationsOrCancellationsMode.SendToAllAndSaveCopy; }
         }
 
-        #region Properties
-        /// <summary>
+                /// <summary>
         /// Gets or sets the start time of the appointment.
         /// </summary>
         public DateTime Start
@@ -965,6 +964,5 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             get { return (OnlineMeetingSettings)this.PropertyBag[AppointmentSchema.OnlineMeetingSettings]; }
         }
-        #endregion
-    }
+            }
 }

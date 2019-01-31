@@ -692,8 +692,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string MarkAsJunkResponseMessage = "MarkAsJunkResponseMessage";
         public const string MovedItemId = "MovedItemId";
 
-        #region Persona
-
+        
         public const string CreationTime = "CreationTime";
         public const string People = "People";
         public const string Persona = "Persona";
@@ -781,10 +780,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string WeddingAnniversariesLocal = "WeddingAnniversariesLocal";
         public const string OriginalDisplayName = "OriginalDisplayName";
 
-        #endregion
-
-        #region People Insights
-        public const string Person = "Person";
+                        public const string Person = "Person";
         public const string Insights = "Insights";
         public const string Insight = "Insight";
         public const string InsightType = "InsightType";
@@ -868,10 +864,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string LastEditor = "LastEditor";
         public const string ProfilePicture = "ProfilePicture";
 
-        #endregion
-
-        #region Conversations
-
+                
         public const string Conversations = "Conversations";
         public const string Conversation = "Conversation";
         public const string UniqueRecipients = "UniqueRecipients";
@@ -931,29 +924,20 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string ConversationNodes = "ConversationNodes";
         public const string MaxItemsToReturn = "MaxItemsToReturn";
 
-        #endregion
-
-        #region TeamMailbox
-
+                
         public const string SetTeamMailbox = "SetTeamMailbox";
         public const string SetTeamMailboxResponse = "SetTeamMailboxResponse";
         public const string UnpinTeamMailbox = "UnpinTeamMailbox";
         public const string UnpinTeamMailboxResponse = "UnpinTeamMailboxResponse";
 
-        #endregion
-
-        #region RoomList & Room
-
+                
         public const string RoomLists = "RoomLists";
         public const string Rooms = "Rooms";
         public const string Room = "Room";
         public const string RoomList = "RoomList";
         public const string RoomId = "Id";
 
-        #endregion
-
-        #region Autodiscover
-
+                
         public const string Autodiscover = "Autodiscover";
         public const string BinarySecret = "BinarySecret";
         public const string Response = "Response";
@@ -1073,10 +1057,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string AutoDiscoverSMTPAddress = "AutoDiscoverSMTPAddress";
         public const string CertPrincipalName = "CertPrincipalName";
         public const string GroupingInformation = "GroupingInformation";
-        #endregion
-
-        #region InboxRule
-        public const string MailboxSmtpAddress = "MailboxSmtpAddress";
+                        public const string MailboxSmtpAddress = "MailboxSmtpAddress";
         public const string RuleId = "RuleId";
         public const string Priority = "Priority";
         public const string IsEnabled = "IsEnabled";
@@ -1144,10 +1125,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string OperationIndex = "OperationIndex";
         public const string ValidationErrors = "ValidationErrors";
         public const string FieldValue = "FieldValue";
-        #endregion
-
-        #region Restrictions
-        public const string Not = "Not";
+                        public const string Not = "Not";
         public const string Bitmask = "Bitmask";
         public const string Constant = "Constant";
         public const string Restriction = "Restriction";
@@ -1164,10 +1142,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string IsGreaterThanOrEqualTo = "IsGreaterThanOrEqualTo";
         public const string IsLessThan = "IsLessThan";
         public const string IsLessThanOrEqualTo = "IsLessThanOrEqualTo";
-        #endregion
-
-        #region Directory only contact properties
-        public const string PhoneticFullName = "PhoneticFullName";
+                        public const string PhoneticFullName = "PhoneticFullName";
         public const string PhoneticFirstName = "PhoneticFirstName";
         public const string PhoneticLastName = "PhoneticLastName";
         public const string Alias = "Alias";
@@ -1178,18 +1153,12 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string DirectoryId = "DirectoryId";
         public const string ManagerMailbox = "ManagerMailbox";
         public const string DirectReports = "DirectReports";
-        #endregion
-
-        #region Photos
-
+                
         public const string SizeRequested = "SizeRequested";
         public const string HasChanged = "HasChanged";
         public const string PictureData = "PictureData";
 
-        #endregion
-
-        #region Request/response element names
-        public const string ResponseMessage = "ResponseMessage";
+                        public const string ResponseMessage = "ResponseMessage";
         public const string ResponseMessages = "ResponseMessages";
 
         // FindConversation
@@ -1671,10 +1640,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string OptedInto = "OptedInto";
         public const string IsArchive = "IsArchive";
 
-        #endregion
-
-        #region Groups
-
+                
         // Like
         public const string Likers = "Likers";
 
@@ -1711,19 +1677,14 @@ namespace Microsoft.Exchange.WebServices.Data
         // SetUnifiedGroupLastVisitedTimeRequest
         public const string SetUnifiedGroupLastVisitedTime = "SetUnifiedGroupLastVisitedTime";
         public const string SetUnifiedGroupLastVisitedTimeResponseMessage = "SetUnifiedGroupLastVisitedTimeResponseMessage";
-        #endregion
-
-        #region Hashtag and Mentions
-
+                
         public const string Hashtags = "Hashtags";
 
         public const string Mentions = "Mentions";
 
         public const string MentionedMe = "MentionedMe";
 
-        #endregion
-        #region SOAP element names
-
+                
         public const string SOAPEnvelopeElementName = "Envelope";
         public const string SOAPHeaderElementName = "Header";
         public const string SOAPBodyElementName = "Body";
@@ -1739,6 +1700,5 @@ namespace Microsoft.Exchange.WebServices.Data
         public const string EwsErrorCodeElementName = "ErrorCode";         // Generated by Availability
         public const string EwsExceptionTypeElementName = "ExceptionType"; // Generated by UM
 
-        #endregion
-    }
+            }
 }

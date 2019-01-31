@@ -46,8 +46,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </remarks>
     internal class EwsServiceMultiResponseXmlReader : EwsServiceXmlReader
     {
-        #region Constructor
-
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="EwsServiceMultiResponseXmlReader"/> class.
         /// </summary>
@@ -70,9 +69,7 @@ namespace Microsoft.Exchange.WebServices.Data
 
             return reader;
         }
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Creates the XML reader.
         /// </summary>
         /// <param name="stream">The stream.</param>

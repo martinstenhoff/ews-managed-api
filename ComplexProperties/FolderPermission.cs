@@ -32,8 +32,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public sealed class FolderPermission : ComplexProperty
     {
-        #region Default permissions
-
+        
         private static LazyMember<Dictionary<FolderPermissionLevel, FolderPermission>> defaultPermissions = new LazyMember<Dictionary<FolderPermissionLevel, FolderPermission>>(
             delegate()
             {
@@ -174,9 +173,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 return result;
             });
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Variants of pre-defined permission levels that Outlook also displays with the same levels.
         /// </summary>
         private static LazyMember<List<FolderPermission>> levelVariants = new LazyMember<List<FolderPermission>>(

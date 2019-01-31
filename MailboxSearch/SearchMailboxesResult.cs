@@ -385,8 +385,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public MailboxStatisticsItem[] MailboxStats { get; set; }
     }
 
-    #region Search Refiner
-
+    
     /// <summary>
     /// Search refiner item
     /// </summary>
@@ -430,10 +429,7 @@ namespace Microsoft.Exchange.WebServices.Data
         }
     }
 
-    #endregion
-
-    #region Mailbox Statistics
-
+        
     /// <summary>
     /// Mailbox statistics item
     /// </summary>
@@ -477,5 +473,4 @@ namespace Microsoft.Exchange.WebServices.Data
         }
     }
 
-    #endregion
-}
+    }

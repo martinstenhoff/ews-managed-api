@@ -36,8 +36,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
     /// </summary>
     internal class AutodiscoverDnsClient
     {
-        #region Constants
-        /// <summary>
+                /// <summary>
         /// SRV DNS prefix to lookup.
         /// </summary>
         private const string AutoDiscoverSrvPrefix = "_autodiscover._tcp.";
@@ -46,25 +45,16 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         /// We are only interested in records that use SSL.
         /// </summary>
         private const int SslPort = 443;
-        #endregion
-
-        #region Static fields
-        /// <summary>
+                        /// <summary>
         /// Random selector in the case of ties.
         /// </summary>
         private static Random randomTieBreakerSelector = new Random();
-        #endregion
-
-        #region Instance fields
-        /// <summary>
+                        /// <summary>
         /// AutodiscoverService using this DNS reader.
         /// </summary>
         private AutodiscoverService service;
 
-        #endregion
-
-        #region Constructors
-        /// <summary>
+                        /// <summary>
         /// Initializes a new instance of the <see cref="AutodiscoverDnsClient"/> class.
         /// </summary>
         /// <param name="service">The service.</param>
@@ -73,10 +63,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             this.service = service;
         }
 
-        #endregion
-
-        #region Instance methods
-
+                
         /// <summary>
         /// Finds the Autodiscover host from DNS SRV records.
         /// </summary>
@@ -200,6 +187,5 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
 
             return bestDnsSrvRecord;
         }
-        #endregion
-    }
+            }
 }

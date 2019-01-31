@@ -155,8 +155,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.endTime - this.startTime; }
         }
 
-        #region ISelfValidate Members
-
+        
         /// <summary>
         /// Validates this instance.
         /// </summary>
@@ -168,6 +167,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

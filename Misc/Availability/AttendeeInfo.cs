@@ -134,8 +134,7 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.excludeConflicts = value; }
         }
 
-        #region ISelfValidate Members
-
+        
         /// <summary>
         /// Validates this instance.
         /// </summary>
@@ -144,6 +143,5 @@ namespace Microsoft.Exchange.WebServices.Data
             EwsUtilities.ValidateParam(this.smtpAddress, "SmtpAddress");
         }
 
-        #endregion
-    }
+            }
 }

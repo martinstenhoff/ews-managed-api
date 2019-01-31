@@ -273,8 +273,7 @@ namespace Microsoft.Exchange.WebServices.Data
             new SuppressReadReceipt(this).InternalCreate(null, null);
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the list of To recipients for the e-mail message.
         /// </summary>
@@ -447,6 +446,5 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             get { return (VotingInformation)this.PropertyBag[EmailMessageSchema.VotingInformation]; }
         }
-        #endregion
-    }
+            }
 }

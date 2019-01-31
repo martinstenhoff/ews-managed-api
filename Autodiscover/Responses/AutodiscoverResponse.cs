@@ -66,8 +66,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             }
         }
 
-        #region Properties
-        /// <summary>
+                /// <summary>
         /// Gets the error code that was returned by the service.
         /// </summary>
         public AutodiscoverErrorCode ErrorCode
@@ -96,6 +95,5 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             set { this.redirectionUrl = value; }
         }
 
-        #endregion
-    }
+            }
 }

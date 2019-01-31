@@ -62,8 +62,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return CancelMeetingMessageSchema.Instance;
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or sets the body of the response.
         /// </summary>
@@ -73,6 +72,5 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.PropertyBag[CancelMeetingMessageSchema.Body] = value; }
         }
 
-        #endregion
-    }
+            }
 }

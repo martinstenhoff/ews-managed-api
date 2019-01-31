@@ -173,8 +173,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region ICustomXmlUpdateSerializer Members
-
+        
         /// <summary>
         /// Writes the update to XML.
         /// </summary>
@@ -236,6 +235,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return true;
         }
 
-        #endregion
-    }
+            }
 }

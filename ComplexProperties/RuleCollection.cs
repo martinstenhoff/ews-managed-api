@@ -121,8 +121,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region IEnumerable Interface
-        /// <summary>
+                /// <summary>
         /// Get an enumerator for the collection
         /// </summary>
         /// <returns>Enumerator</returns>
@@ -139,6 +138,5 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             return rules.GetEnumerator();
         }
-        #endregion
-    }
+            }
 }

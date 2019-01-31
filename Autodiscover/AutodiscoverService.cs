@@ -46,8 +46,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
     /// </summary>
     public sealed class AutodiscoverService : ExchangeServiceBase
     {
-        #region Static members
-
+        
         /// <summary>
         /// Autodiscover legacy path
         /// </summary>
@@ -133,10 +132,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         /// </summary>
         private const ExchangeVersion MinimumRequestVersionForAutoDiscoverSoapService = ExchangeVersion.Exchange2010;
 
-        #endregion
-
-        #region Private members
-
+                
         private string domain;
         private bool? isExternal = true;
         private Uri url;
@@ -151,9 +147,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             ExchangeVersion? requestedVersion,
             ref Uri autodiscoverUrl);
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Default implementation of AutodiscoverRedirectionUrlValidationCallback.
         /// Always returns true indicating that the URL can be used.
         /// </summary>
@@ -164,8 +158,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             throw new AutodiscoverLocalException(string.Format(Strings.AutodiscoverRedirectBlocked, redirectionUrl));
         }
 
-        #region Legacy Autodiscover
-
+        
         /// <summary>
         /// Calls the Autodiscover service to get configuration settings at the specified URL.
         /// </summary>
@@ -821,10 +814,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
 
             return settings.ConvertSettings(emailAddress, requestedSettings);
         }
-        #endregion
-
-        #region SOAP-based Autodiscover
-
+                
         /// <summary>
         /// Calls the SOAP Autodiscover service for user settings for a single SMTP address.
         /// </summary>
@@ -1486,10 +1476,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             }
         }
 
-        #endregion
-
-        #region Utilities
-        /// <summary>
+                        /// <summary>
         /// Creates an HttpWebRequest instance and initializes it with the appropriate parameters,
         /// based on the configuration of this service object.
         /// </summary>
@@ -1532,10 +1519,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
                 TraceFlags.AutodiscoverResponseHttpHeaders,
                 TraceFlags.AutodiscoverResponse);
         }
-        #endregion
-
-        #region Constructors
-
+                
         /// <summary>
         /// Initializes a new instance of the <see cref="AutodiscoverService"/> class.
         /// </summary>
@@ -1645,10 +1629,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         {
         }
 
-        #endregion
-
-        #region Public Methods
-        /// <summary>
+                        /// <summary>
         /// Retrieves the specified settings for single SMTP address.
         /// </summary>
         /// <param name="userSmtpAddress">The SMTP addresses of the user.</param>
@@ -1832,10 +1813,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
 
             return true;
         }
-        #endregion
-
-        #region Properties
-        /// <summary>
+                        /// <summary>
         /// Gets or sets the domain this service is bound to. When this property is set, the domain
         /// name is used to automatically determine the Autodiscover service URL.
         /// </summary>
@@ -1926,6 +1904,5 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             set;
         }
 
-        #endregion
-    }
+            }
 }

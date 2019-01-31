@@ -41,14 +41,10 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
     [EditorBrowsable(EditorBrowsableState.Never)]
     internal sealed class OutlookProtocol
     {
-        #region Private constants
-        private const string EXCH = "EXCH";
+                private const string EXCH = "EXCH";
         private const string EXPR = "EXPR";
         private const string WEB = "WEB";
-        #endregion
-
-        #region Private static fields
-        /// <summary>
+                        /// <summary>
         /// Converters to translate common Outlook protocol settings.
         /// Each entry maps to a lambda expression used to get the matching property from the OutlookProtocol instance. 
         /// </summary>
@@ -210,10 +206,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
                 results.Add(OutlookProtocol.WEB, OutlookProtocolType.Web);
                 return results;
             });
-        #endregion
-
-        #region Private fields
-        private string activeDirectoryServer;
+                        private string activeDirectoryServer;
         private string authPackage;
         private string availabilityServiceUrl;
         private string ecpUrl;
@@ -248,9 +241,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         private string groupingInformation;
         private WebClientUrlCollection externalOutlookWebAccessUrls;
         private WebClientUrlCollection internalOutlookWebAccessUrls;
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Initializes a new instance of the <see cref="OutlookProtocol"/> class.
         /// </summary>
         internal OutlookProtocol()

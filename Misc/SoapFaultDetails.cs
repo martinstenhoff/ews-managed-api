@@ -39,8 +39,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal class SoapFaultDetails
     {
-        #region Private Members
-
+        
         private string faultCode;
         private string faultString;
         private string faultActor;
@@ -83,19 +82,14 @@ namespace Microsoft.Exchange.WebServices.Data
         /// </summary>
         private Dictionary<string, string> errorDetails = new Dictionary<string, string>();
 
-        #endregion
-
-        #region Constructor
-        /// <summary>
+                        /// <summary>
         /// Initializes a new instance of the <see cref="SoapFaultDetails"/> class.
         /// </summary>
         private SoapFaultDetails()
         {
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Parses the soap:Fault content.
         /// </summary>
         /// <param name="reader">The reader.</param>

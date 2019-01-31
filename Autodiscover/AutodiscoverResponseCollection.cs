@@ -140,8 +140,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
         /// <returns>TResponse.</returns>
         internal abstract TResponse CreateResponseInstance();
 
-        #region IEnumerable<TResponse>
-
+        
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -151,10 +150,7 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             return this.responses.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -164,6 +160,5 @@ namespace Microsoft.Exchange.WebServices.Autodiscover
             return (this.responses as System.Collections.IEnumerable).GetEnumerator();
         }
 
-        #endregion
-    }
+            }
 }

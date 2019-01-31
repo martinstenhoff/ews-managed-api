@@ -714,8 +714,7 @@ namespace Microsoft.Exchange.WebServices.Data
             writer.WriteEndElement(); // Item/FolderShape
         }
 
-        #region IEnumerable<PropertyDefinitionBase> Members
-
+        
         /// <summary>
         /// Returns an enumerator that iterates through the collection.
         /// </summary>
@@ -727,10 +726,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.additionalProperties.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Returns an enumerator that iterates through a collection.
         /// </summary>
@@ -742,6 +738,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.additionalProperties.GetEnumerator();
         }
 
-        #endregion
-    }
+            }
 }

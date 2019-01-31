@@ -190,8 +190,7 @@ namespace Microsoft.Exchange.WebServices.Data
             internal set { this.allowExternalOof = value; }
         }
 
-        #region ISelfValidate Members
-
+        
         /// <summary>
         /// Validates this instance.
         /// </summary>
@@ -208,6 +207,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

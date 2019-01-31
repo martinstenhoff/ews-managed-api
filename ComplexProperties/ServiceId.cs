@@ -145,8 +145,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region Object method overrides
-        /// <summary>
+                /// <summary>
         /// Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
         /// </summary>
         /// <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
@@ -205,6 +204,5 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             return (this.uniqueId == null) ? string.Empty : this.uniqueId;
         }
-        #endregion
-    }
+            }
 }

@@ -34,14 +34,10 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public sealed class PhysicalAddressEntry : DictionaryEntryProperty<PhysicalAddressKey>
     {
-        #region Fields
-
+        
         private SimplePropertyBag<string> propertyBag;
 
-        #endregion
-
-        #region Constructors
-
+                
         /// <summary>
         /// Initializes a new instance of PhysicalAddressEntry
         /// </summary>
@@ -52,10 +48,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.propertyBag.OnChange += this.PropertyBagChanged;
         }
 
-        #endregion
-
-        #region Properties
-
+                
         /// <summary>
         /// Gets or sets the street.
         /// </summary>
@@ -101,10 +94,7 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.propertyBag[PhysicalAddressSchema.PostalCode] = value; }
         }
 
-        #endregion
-
-        #region Internal methods
-
+                
         /// <summary>
         /// Clears the change log.
         /// </summary>
@@ -225,10 +215,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return true;
         }
 
-        #endregion
-
-        #region Private methods
-
+                
         /// <summary>
         /// Gets the field URI.
         /// </summary>
@@ -266,10 +253,7 @@ namespace Microsoft.Exchange.WebServices.Data
             writer.WriteEndElement(); // ewsObject.GetDeleteFieldXmlElementName()
         }
 
-        #endregion
-
-        #region Classes
-
+                
         /// <summary>
         /// Schema definition for PhysicalAddress
         /// </summary>
@@ -306,6 +290,5 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-    }
+            }
 }

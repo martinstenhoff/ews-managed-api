@@ -44,8 +44,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal static class EwsUtilities
     {
-        #region Private members
-
+        
         /// <summary>
         /// Map from XML element names to ServiceObject type and constructors. 
         /// </summary>
@@ -126,10 +125,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 { "Int32", "int" },
                 { "String", "string" }
             });
-        #endregion
-
-        #region Constants
-
+                
         internal const string XSFalse = "false";
         internal const string XSTrue = "true";
 
@@ -162,9 +158,7 @@ namespace Microsoft.Exchange.WebServices.Data
         /// Regular expression for legal domain names.
         /// </summary>
         internal const string DomainRegex = "^[-a-zA-Z0-9_.]+$";
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Asserts that the specified condition if true.
         /// </summary>
         /// <param name="condition">Assertion.</param>
@@ -389,8 +383,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return null;
         }
 
-        #region Tracing routines
-
+        
         /// <summary>
         /// Write trace start element.
         /// </summary>
@@ -589,10 +582,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return sb.ToString();
         }
 
-        #endregion
-
-        #region Stream routines
-
+                
         /// <summary>
         /// Copies source stream to target.
         /// </summary>
@@ -620,9 +610,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Gets the build version.
         /// </summary>
         /// <value>The build version.</value>
@@ -631,8 +619,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return EwsUtilities.buildVersion.Member; }
         }
 
-        #region Conversion routines
-
+        
         /// <summary>
         /// Convert bool to XML Schema bool.
         /// </summary>
@@ -1061,10 +1048,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 timeSpan.Seconds);
         }
 
-        #endregion
-
-        #region Type Name utilities
-        /// <summary>
+                        /// <summary>
         /// Gets the printable name of a CLR type.
         /// </summary>
         /// <param name="type">The type.</param>
@@ -1114,10 +1098,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return typeNameToShortNameMap.Member.TryGetValue(typeName, out name) ? name : typeName;
         }
 
-        #endregion
-
-        #region EmailAddress parsing
-
+                
         /// <summary>
         /// Gets the domain name from an email address.
         /// </summary>
@@ -1135,10 +1116,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return emailAddressParts[1];
         }
 
-        #endregion
-
-        #region Method parameters validation routines
-
+                
         /// <summary>
         /// Validates parameter (and allows null value).
         /// </summary>
@@ -1501,10 +1479,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
             return dict;
         }
-        #endregion
-
-        #region IEnumerable utility methods
-
+                
         /// <summary>
         /// Gets the enumerated object count.
         /// </summary>
@@ -1545,10 +1520,7 @@ namespace Microsoft.Exchange.WebServices.Data
             throw new ArgumentOutOfRangeException("index", Strings.IEnumerableDoesNotContainThatManyObject);
         }
 
-        #endregion
-
-        #region Extension methods
-        /// <summary>
+                        /// <summary>
         /// Count characters in string that match a condition.
         /// </summary>
         /// <param name="str">The string.</param>
@@ -1601,6 +1573,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 action(entry);
             }
         }
-        #endregion
-    }
+            }
 }

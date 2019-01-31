@@ -152,8 +152,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return (PostItem)this.InternalCreate(new FolderId(destinationFolderName), null);
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or sets the subject of the post reply.
         /// </summary>
@@ -181,6 +180,5 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.PropertyBag[ResponseObjectSchema.BodyPrefix] = value; }
         }
 
-        #endregion
-    }
+            }
 }

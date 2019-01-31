@@ -334,8 +334,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.properties.TryGetValue(xmlElementName, out propertyDefinition);
         }
 
-        #region IEnumerable<SimplePropertyDefinition> Members
-
+        
         /// <summary>
         /// Obtains an enumerator for the properties of the schema.
         /// </summary>
@@ -345,10 +344,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.visibleProperties.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Obtains an enumerator for the properties of the schema.
         /// </summary>
@@ -358,6 +354,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.visibleProperties.GetEnumerator();
         }
 
-        #endregion
-    }
+            }
 }

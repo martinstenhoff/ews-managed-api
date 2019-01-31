@@ -140,8 +140,7 @@ namespace Microsoft.Exchange.WebServices.Data
             set { this.SetFieldValue<string>(ref this.text, value); }
         }
 
-        #region Object method overrides
-        /// <summary>
+                /// <summary>
         /// Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
         /// </summary>
         /// <returns>
@@ -151,6 +150,5 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             return (this.Text == null) ? string.Empty : this.Text;
         }
-        #endregion
-    }
+            }
 }

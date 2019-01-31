@@ -150,8 +150,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 null);
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets or sets the actual amount of time that is spent on the task.
         /// </summary>
@@ -351,6 +350,5 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return AffectedTaskOccurrence.AllOccurrences; }
         }
 
-        #endregion
-    }
+            }
 }

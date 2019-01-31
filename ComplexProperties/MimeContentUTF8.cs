@@ -50,8 +50,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.Content = content;
         }
 
-        #region Object method overrides
-        /// <summary>
+                /// <summary>
         /// Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
         /// </summary>
         /// <returns>
@@ -80,6 +79,5 @@ namespace Microsoft.Exchange.WebServices.Data
                 }
             }
         }
-        #endregion
-    }
+            }
 }

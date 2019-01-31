@@ -46,8 +46,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private string yomiGivenName;
         private string yomiSurname;
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the contact's title.
         /// </summary>
@@ -128,9 +127,7 @@ namespace Microsoft.Exchange.WebServices.Data
             get { return this.yomiSurname; }
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Tries to read element from XML.
         /// </summary>
         /// <param name="reader">The reader.</param>

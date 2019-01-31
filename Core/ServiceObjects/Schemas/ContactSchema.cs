@@ -441,8 +441,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 PropertyDefinitionFlags.CanFind,
                 ExchangeVersion.Exchange2010);
         
-        #region Directory Only Properties
-
+        
         /// <summary>
         /// Defines the PhoneticFullName property.
         /// </summary>
@@ -569,10 +568,7 @@ namespace Microsoft.Exchange.WebServices.Data
                 ExchangeVersion.Exchange2010_SP1,
                 delegate() { return new EmailAddressCollection(); });
 
-        #endregion
-
-        #region Email addresses indexed properties
-
+                
         /// <summary>
         /// Defines the EmailAddress1 property.
         /// </summary>
@@ -594,10 +590,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public static readonly IndexedPropertyDefinition EmailAddress3 =
             new IndexedPropertyDefinition(FieldUris.EmailAddress, "EmailAddress3");
 
-        #endregion
-
-        #region IM addresses indexed properties
-
+                
         /// <summary>
         /// Defines the ImAddress1 property.
         /// </summary>
@@ -619,10 +612,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public static readonly IndexedPropertyDefinition ImAddress3 =
             new IndexedPropertyDefinition(FieldUris.ImAddress, "ImAddress3");
 
-        #endregion
-
-        #region Phone numbers indexed properties
-
+                
         /// <summary>
         /// Defines the AssistentPhone property.
         /// </summary>
@@ -756,10 +746,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public static readonly IndexedPropertyDefinition TtyTddPhone =
             new IndexedPropertyDefinition(FieldUris.PhoneNumber, "TtyTddPhone");
 
-        #endregion
-
-        #region Business address indexed properties
-
+                
         /// <summary>
         /// Defines the BusinessAddressStreet property.
         /// </summary>
@@ -795,10 +782,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public static readonly IndexedPropertyDefinition BusinessAddressPostalCode =
             new IndexedPropertyDefinition(FieldUris.PhysicalAddressPostalCode, "Business");
 
-        #endregion
-
-        #region Home address indexed properties
-
+                
         /// <summary>
         /// Defines the HomeAddressStreet property.
         /// </summary>
@@ -834,10 +818,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public static readonly IndexedPropertyDefinition HomeAddressPostalCode =
             new IndexedPropertyDefinition(FieldUris.PhysicalAddressPostalCode, "Home");
 
-        #endregion
-
-        #region Other address indexed properties
-
+                
         /// <summary>
         /// Defines the OtherAddressStreet property.
         /// </summary>
@@ -873,9 +854,7 @@ namespace Microsoft.Exchange.WebServices.Data
         public static readonly IndexedPropertyDefinition OtherAddressPostalCode =
             new IndexedPropertyDefinition(FieldUris.PhysicalAddressPostalCode, "Other");
 
-        #endregion
-
-        // This must be declared after the property definitions
+                // This must be declared after the property definitions
         internal static new readonly ContactSchema Instance = new ContactSchema();
 
         /// <summary>

@@ -49,8 +49,7 @@ namespace Microsoft.Exchange.WebServices.Data
         {
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the name under which this contact group is filed as.
         /// </summary>
@@ -91,9 +90,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Binds to an existing contact group and loads the specified set of properties.
         /// Calling this method results in a call to EWS.
         /// </summary>

@@ -33,8 +33,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public sealed class ExtendedPropertyDefinition : PropertyDefinitionBase
     {
-        #region Constants
-
+        
         private const string FieldFormat = "{0}: {1} ";
 
         private const string PropertySetFieldName = "PropertySet";
@@ -44,10 +43,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private const string IdFieldName = "Id";
         private const string MapiTypeFieldName = "MapiType";
 
-        #endregion
-
-        #region Fields
-
+                
         private DefaultExtendedPropertySet? propertySet;
         private Guid? propertySetId;
         private int? tag;
@@ -55,9 +51,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private int? id;
         private MapiPropertyType mapiType;
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Initializes a new instance of the <see cref="ExtendedPropertyDefinition"/> class.
         /// </summary>
         internal ExtendedPropertyDefinition()

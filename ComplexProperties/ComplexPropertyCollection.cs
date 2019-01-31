@@ -414,8 +414,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region IEnumerable<TComplexProperty> Members
-
+        
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -425,10 +424,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.items.GetEnumerator();
         }
 
-        #endregion
-
-        #region IEnumerable Members
-
+                
         /// <summary>
         /// Gets an enumerator that iterates through the elements of the collection.
         /// </summary>
@@ -438,10 +434,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.items.GetEnumerator();
         }
 
-        #endregion
-
-        #region ICustomXmlUpdateSerializer Members
-
+                
         /// <summary>
         /// Writes the update to XML.
         /// </summary>
@@ -482,6 +475,5 @@ namespace Microsoft.Exchange.WebServices.Data
             return false;
         }
 
-        #endregion
-    }
+            }
 }

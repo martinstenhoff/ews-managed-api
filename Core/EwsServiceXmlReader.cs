@@ -37,14 +37,10 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     internal class EwsServiceXmlReader : EwsXmlReader
     {
-        #region Private members
-
+        
         private ExchangeService service;
 
-        #endregion
-
-        #region Constructor
-
+                
         /// <summary>
         /// Initializes a new instance of the <see cref="EwsServiceXmlReader"/> class.
         /// </summary>
@@ -56,9 +52,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.service = service;
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Converts the specified string into a DateTime objects.
         /// </summary>
         /// <param name="dateTimeString">The date time string to convert.</param>

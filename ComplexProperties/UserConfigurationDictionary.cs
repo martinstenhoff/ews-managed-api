@@ -151,8 +151,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #region IEnumerable members
-
+        
         /// <summary>
         /// Returns an enumerator that iterates through the user configuration dictionary.
         /// </summary>
@@ -162,9 +161,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return this.dictionary.GetEnumerator();
         }
 
-        #endregion
-
-        /// <summary>
+                /// <summary>
         /// Gets or sets the isDirty flag.
         /// </summary>
         internal bool IsDirty

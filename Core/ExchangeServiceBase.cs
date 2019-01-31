@@ -38,8 +38,7 @@ namespace Microsoft.Exchange.WebServices.Data
     /// </summary>
     public abstract class ExchangeServiceBase
     {
-        #region Const members
-        private static readonly object lockObj = new object();
+                private static readonly object lockObj = new object();
 
         private readonly ExchangeVersion requestedServerVersion = ExchangeVersion.Exchange2013_SP1;
 
@@ -52,19 +51,13 @@ namespace Microsoft.Exchange.WebServices.Data
         /// The binary secret.
         /// </summary>
         private static byte[] binarySecret;
-        #endregion
-
-        #region Static members
-
+                
         /// <summary>
         /// Default UserAgent
         /// </summary>
         private static string defaultUserAgent = "ExchangeServicesClient/" + EwsUtilities.BuildVersion;
 
-        #endregion
-
-        #region Fields        
-
+                
         /// <summary>
         /// Occurs when the http response headers of a server call is captured.
         /// </summary>
@@ -92,10 +85,7 @@ namespace Microsoft.Exchange.WebServices.Data
         private IDictionary<string, string> httpHeaders = new Dictionary<string, string>();
         private IDictionary<string, string> httpResponseHeaders = new Dictionary<string, string>();
         private IEwsHttpWebRequestFactory ewsHttpWebRequestFactory = new EwsHttpWebRequestFactory();  
-        #endregion
-
-        #region Event handlers
-
+                
         /// <summary>
         /// Calls the custom SOAP header serialization event handlers, if defined.
         /// </summary>
@@ -113,10 +103,7 @@ namespace Microsoft.Exchange.WebServices.Data
             }
         }
 
-        #endregion
-
-        #region Utilities
-
+                
         /// <summary>
         /// Creates an HttpWebRequest instance and initializes it with the appropriate parameters,
         /// based on the configuration of this service object.
@@ -485,10 +472,7 @@ namespace Microsoft.Exchange.WebServices.Data
             this.userAgent = userAgent;
         }
 
-        #endregion
-
-        #region Constructors
-
+                
         /// <summary>
         /// Initializes a new instance of the <see cref="ExchangeServiceBase"/> class.
         /// </summary>
@@ -561,10 +545,7 @@ namespace Microsoft.Exchange.WebServices.Data
         {
         }
 
-        #endregion
-
-        #region Validation
-
+                
         /// <summary>
         /// Validates this instance.
         /// </summary>
@@ -572,10 +553,7 @@ namespace Microsoft.Exchange.WebServices.Data
         {            
         }
 
-        #endregion
-
-        #region Properties
-
+                
         /// <summary>
         /// Gets or sets the cookie container.
         /// </summary>
@@ -914,15 +892,11 @@ namespace Microsoft.Exchange.WebServices.Data
         /// </summary>
         internal bool SuppressXmlVersionHeader { get; set; }
 
-        #endregion
-
-        #region Events
-
+                
         /// <summary>
         /// Provides an event that applications can implement to emit custom SOAP headers in requests that are sent to Exchange.
         /// </summary>
         public event CustomXmlSerializationDelegate OnSerializeCustomSoapHeaders;
 
-        #endregion
-    }
+            }
 }

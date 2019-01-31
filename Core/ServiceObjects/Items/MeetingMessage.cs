@@ -102,8 +102,7 @@ namespace Microsoft.Exchange.WebServices.Data
             return ExchangeVersion.Exchange2007_SP1;
         }
 
-        #region Properties
-
+        
         /// <summary>
         /// Gets the Id of the appointment associated with the meeting message.
         /// </summary>
@@ -176,6 +175,5 @@ namespace Microsoft.Exchange.WebServices.Data
         {
             get { return (DateTime?)this.PropertyBag[MeetingMessageSchema.ICalDateTimeStamp]; }
         }
-        #endregion
-    }
+            }
 }
